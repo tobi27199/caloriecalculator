@@ -61,4 +61,18 @@
   #radio input {
     margin-right: 5px;
   }
-  
+
+  a{
+    color: #ff0000;   
+  }
+  a:visited{
+      color: #ff0000;
+  }
+
+  a:active{
+      color: #ff0000;
+  }
+
+  a:hover{
+      color: #ff0000;
+  }
