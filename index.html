@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="de">
+ <head>
+  
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script src="script.js"></script>
+
+ </head>
+ <body class="body">
+    <div class="mainpage">
+        <div class="main_text">
+            <h2>Kalorienverbrauchs-Rechner</h2>
+            Dies ist ein Kalorienrechner, der auf der Grundlage einiger <a href="info.html">Studien</a> basiert. 
+        </div>
+        <div class="input">
+            <form id="input_data">
+            
+            <label for="sex">Geschlecht:</label>
+            <select name="sex" id="sex">
+                <option value="1">Männlich</option>
+                <option value="2">Weiblich</option>
+            </select>
+            
+            <ul>
+                <li>
+                    <label for="age">Alter:-(Jahre)</label>
+                    <input type="text" id="age" name="alter">
+                </li>
+                <li>
+                    <label for="height">Größe:-(Meter)</label>
+                    <input type="text" id="height" name="groesse">
+                </li>
+                <li>
+                    <label for="weight">Gewicht:-(Kilogramm)</label>
+                    <input type="text" id="weight" name="gewicht">
+                </li>
+                
+            </ul>
+            <div id="radio">
+                <label for="activity">Aktivität:</label>
+                <select name="activity" id="activity">
+                    <option value="1.2">Nur sitzen/ liegen</option>
+                    <option value="1.45">Fast ausschließlich sitzen, wenig aktivität</option>
+                    <option value="1.65">Überwiegend sitzen, zusätzlich etwas stehen</option>
+                    <option value="1.85">Überwiegend stehen/ gehen</option>
+                    <option value="2.2">Körperlich anstrengende Berufe/ Tätigkeiten</option>
+                </select>
+            </div>
+            
+            <!-- Button hinzugefügt -->
+            <button type="button" onclick="calculate()">Berechnen</button>
+            
+            </form>
+        </div>
+        <div id="resultOutput"></div>
+    </div>
+    
+ </body>
+</html>
