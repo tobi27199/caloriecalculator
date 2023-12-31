@@ -4,13 +4,30 @@ function calculate() {
     var weight = parseFloat(document.getElementById('weight').value);
     var activityMultiplier = parseFloat(document.getElementById('activity').value);
     var gender = parseFloat(document.getElementById('sex').value);
-
+    var bmi_ = "none";
+    
     if (!isNaN(age) && !isNaN(height) && !isNaN(weight) && !isNaN(activityMultiplier) && !isNaN(gender)) {
+        var bmi = weight / ((height/100)*(height/100))
         if(gender == 1){
         var x1 = 66.47 + (15.75 * weight) + (5.0 * height) - (6.75 * age);
         var x2 = (10 * weight) + (6.25 * height) - (5 * age) + 5;
         var x3 = (x1 + x2) / 2;
         var result = x3 * activityMultiplier;
+
+        if (bmi <= 18.5) {
+            bmi_ = "Achtung: Sie sind stark untergewichtig";
+        } else if (bmi <= 24.9 && bmi > 18.5) {
+            bmi_ = "Sie sind leicht untergewichtig.";
+        } else if (bmi <= 29.9 && bmi > 24.9) {
+            bmi_ = "Sie haben ein normales Gewicht.";
+        } else if (bmi <= 34.9 && bmi > 29.9) {
+            bmi_ = "Sie haben Übergewicht (Grad I).";
+        } else if (bmi <= 39.9 && bmi > 34.9) {
+            bmi_ = "Sie haben Übergewicht (Grad II).";
+        } else {
+            bmi_ = "Achtung: Sie haben starkes Übergewicht (Adipositas).";
+        }
+  
 
         // Ausgabe des Ergebnisses in ein Element mit der ID "resultOutput"
         document.getElementById('resultOutput').innerText = 'Ergebnis: ' + result;
@@ -22,7 +39,7 @@ function calculate() {
         var result = x3 * activityMultiplier;
 
         // Ausgabe des Ergebnisses in ein Element mit der ID "resultOutput"
-        document.getElementById('resultOutput').innerText = 'Ergebnis: ' + result;
+        document.getElementById('resultOutput').innerText = 'Ergebnis: ' + result + bmi_;
         }
 
         
