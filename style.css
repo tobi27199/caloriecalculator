@@ -76,3 +76,8 @@
   a:hover{
       color: #ff0000;
   }
+
+#resultOutput{
+        margin-top: 10px;
+        color: lightblue;
+}
