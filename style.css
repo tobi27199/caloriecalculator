@@ -79,5 +79,6 @@
 
 #resultOutput{
         margin-top: 10px;
-        color: lightblue;
+        color: red;
+        background-color: lightblue;
 }
