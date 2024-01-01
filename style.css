@@ -1,6 +1,6 @@
 .body {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
@@ -9,7 +9,7 @@
   }
   
   .mainpage {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     background-color: #1a1f2e;
