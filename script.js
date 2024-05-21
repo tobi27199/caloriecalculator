@@ -34,7 +34,6 @@ function calculate() {
             bmi_ = "Achtung: Sie haben starkes Übergewicht (Adipositas).";
         }
 
-        // Ausgabe des Ergebnisses und BMI in ein Element mit der ID "resultOutput"
         document.getElementById('resultOutput').innerHTML = 'Ergebnis: ' + result.toFixed(3) + ' Kalorien am Tag.<br>BMI: ' + bmi_;
     } else {
         alert('Bitte geben Sie gültige Werte ein.');
