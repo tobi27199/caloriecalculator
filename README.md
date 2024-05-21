@@ -8,7 +8,7 @@ Das Tool verwendet die Formeln von *Harris Benedict* und *Mifflin-St Jeor* um ei
 ## Link zum Ausprobieren:
 https://tobi27199.github.io/caloriecalculator/
 
-## APP:
+## APP (Android):
 https://drive.google.com/file/d/1t58Gkl4zq8nudoSNBoRl8TIAzCBiM4-T/view?usp=sharing
 
 
